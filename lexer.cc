@@ -1,8 +1,3 @@
-/*
- * Copyright (C) Rida Bazzi, 2017
- *
- * Do not share this file with anyone
- */
 #include <iostream>
 #include <istream>
 #include <vector>
@@ -160,17 +155,6 @@ Token LexicalAnalyzer::GetToken()
     return token;
 }
 
-// UngetToken() resets the index back by a amount equal to its argument 
-// "howMany". "howMany" should be positive and not larger than the 
-// actual number of valid tokens that were obtained using GetToken()
-//
-// NOTE 1: UngetToken() unget actual tokens. So, if you call GetToken() twice
-// and for both call you get END_OF_FILE UngetToken(2) will return the last 
-// two actual tokens (not END_OF_FILE). This might make the use of UngetToken()
-// awkward and potentially error-prone (see NOTE 2)
-//
-// NOTE 2: UngetToken() will not be needed if you use GetToken() and peek() 
-// judiciously
 void LexicalAnalyzer::UngetToken(int howMany)
 {
     if (howMany <= 0)
