@@ -1,8 +1,3 @@
-/*
- * Copyright (C) Rida Bazzi, 2017
- *
- * Do not share this file with anyone
- */
 #ifndef _COMPILER_H_
 #define _COMPILER_H_
 
@@ -86,21 +81,7 @@ struct InstructionNode
 
 void debug(const char* format, ...);
 
-//---------------------------------------------------------
-// You should write the following function:
 
 struct InstructionNode * parse_generate_intermediate_representation();
-
-/*
-  NOTE:
-
-  You need to write a function with the above signature. This function
-  is supposed to parse the input program and generate an intermediate
-  representation for it. The output of this function is passed to the
-  execute_program function in main().
-
-  Write your code in a separate file and include this header file in
-  your code.
-*/
 
 #endif /* _COMPILER_H_ */
