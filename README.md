@@ -28,4 +28,4 @@ The grammar defines the syntax of the input language and supports:
 - Control structures (`if`, `while`, `for`, `switch`)
 - Input and output statements
 
-**P.S. This is a school project and I do not consent to use this project to anyone!!
+**P.S. This is a school project and I do not consent to use this project to anyone!!**
